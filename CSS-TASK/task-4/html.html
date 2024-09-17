@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </div>
+
+    <hr class="hr">
+<header>
+    <h1 id="nav-title"><a href="#">hello</a></h1>
+    <nav>
+       <ul>
+           <li><a href="#">About</a></li>
+           <li><a href="#">home</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul>
+    </nav>          
+    </header>
+
+    <hr>
+<div class="cent">
+    <div class="center">
+        <h1>center me</h1>
+    </div>
+    </div>
+    <hr>
+
+    <div class="co">
+        <div class="co1">CPI partners with schools, NGOs, sports clubs and community
+            CPI partners with schools, NGOs, sports clubs and community groups seeking to foster greater opportunities for vulnerable children to play, learn, and develop, while preserving local culture..</div>
+        <div class="co1">iam big</div>
+        <div class="co1">my name is shehab</div>
+        <div class="co1">iam in love with major</div>
+    </div>
+    <hr>
+    <div class="conr">
+        <div class="plant-name">Turnip</div>
+        <div class="plant-name">greens</div>
+        <div class="plant-name">yarrow</div>
+        <div class="plant-name">ricebean</div>
+        <div class="plant-name long">rutabaga</div>
+        <div class="plant-name long">endive</div>
+        <div class="plant-name long">cauliflower</div>
+        <div class="plant-name long">sea lettuce</div>
+        <div class="plant-name long">kohlrabi</div>
+        <div class="plant-name long">amaranth</div>
+    </div>
+    <hr>
+
+    <style>
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+#nav-title {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #00ffea;
+}
+
+.center{
+    
+    width: 600px;
+    height: 200px;
+    background-color: #4CAF50;
+    color: rgb(14, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.co{
+    display: flex;
+   
+}
+.co1 {
+    width:300px;
+    height: 400px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.conr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+}
+.plant-name {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plant-name.long {
+    flex-basis: calc(33% - 10px);
+}
+    </style>
+</body>
+</html>

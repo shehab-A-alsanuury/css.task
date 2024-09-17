@@ -1,0 +1,184 @@
+
+#p3 {
+    color: pink;
+    font-size: 10px;
+}
+#p5 {
+    color: yellow;
+    font-size: 3rem;
+}
+.rep{
+
+background-image: url(https://media.istockphoto.com/id/467367026/photo/perfect-sky-and-ocean.jpg?s=612x612&w=0&k=20&c=LZYFRxIhuKQom3l-kR3TLN7GikSJYJz9NRglQ3nngBw=); 
+background-repeat: repeat-y; 
+background-size: 300px;
+height: 500px;
+}
+.blue {
+    color: blue;
+}
+#green{
+    color: green;
+}
+#red {
+    color: red;
+}
+.paragraph {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.pink-bg {
+    background-color: #FFD1DC;
+}
+.blue-bg {
+    background-color: #1E3F5A;
+    color: white;
+}
+.green-bg {
+    background-color: #98FB98;
+}
+.dual-bg {
+    background: linear-gradient(to bottom, #1E3F5A 50%, #98FB98 50%);
+    color: white;
+}
+
+
+.p1 {
+    color: aqua;
+}
+#p2 {
+    background-color: aqua;
+    color:yellowgreen;
+}
+.div1{
+    background-color: aqua;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.div2 {
+    background-color: cadetblue;
+    text-align: center;
+}
+.div2 p:nth-child(even) {
+    color: blue;
+}
+.div2 p:nth-child(odd) {
+    color: red;
+}
+dt:nth-child(odd){
+    color: white;
+}
+#itemlist dt{
+    padding: 10px;
+
+}
+.blue{
+    background-color: rgb(0, 94, 255);
+}
+.pink {
+    background-color: pink;
+}
+.yellow {
+    background-color: chocolate;
+}
+form, form *{
+    padding: 10px;
+    margin: 15px 0;
+   
+}
+
+
+form {
+    width: 400px;
+    border: 5px solid black;
+    background-color: bisque;
+   
+}
+#Contactus{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+input, textarea, button{
+    
+    width: 100%;
+    box-sizing: border-box;
+
+}
+button {
+    background-color: yellow;
+}
+.fourcolor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color: #013A6B;
+      background: linear-gradient(to left bottom, #1f1f7a 0%, #80005a 50%, #d4ff00 50%, #05c605 100%);
+      height: 200px;
+}
+.header {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.link {
+    color: red;
+    margin-bottom: 20px;
+}
+.cat-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid green;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.cat-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-box {
+    background-color: #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.form-section {
+    background-color: green;
+    padding: 15px;
+    color: white;
+   
+}
+.form-section label {
+    margin-right: 10px;
+}
+.form-section input[type="text"] {
+    margin-top: 10px;
+    display: flex;
+    width: 1%;
+}
+.form-section input[type="submit"] {
+    margin-left: 10px;
+    
+
+}
+.bl {
+    background-color: aqua;
+}
+.pi {
+    background-color: rgb(247, 8, 247);
+}
+.re {
+    background-color: red;
+}
+
+

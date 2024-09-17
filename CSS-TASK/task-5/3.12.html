@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card-content {
+            flex-grow: 1;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .card p {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #666;
+            flex-grow: 1;
+        }
+        .card ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 0.9em;
+        }
+        .buy-button {
+            background-color: #008080;
+            color: white;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-content">
+                <img src="/client1.jpg" alt="Computer Starter Kit">
+                <h2>This is the best</h2>
+                <p>This is the best ..........</p>
+                <ul>
+                    <li>...1...</li>
+                    <li>....2...</li>
+                    <li>...3...</li>
+                    <li>...4...</li>
+                </ul>
+            </div>
+            <a href="#" class="buy-button">BUY NOW</a>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/client2.jpg" alt="Printer">
+                <h2>lovely man</h2>
+                <p>This is the best.</p>
+                <ul>
+                    <li>This is the best..</li>
+                </ul>
+            </div>
+            <a href="#" class="buy-button">BUY NOW</a>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/download (1).jpg" alt="Printer 2">
+                <h2>.......</h2>
+                <p>what u love.</p>
+            </div>
+            <a href="#" class="buy-button">BUY NOW</a>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>what u love</h2>
+                <p>A computer mouse is a pointing device (hand control) that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows a smooth control of the graphical user interface.</p>
+            </div>
+            <a href="#" class="buy-button">BUY NOW</a>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/o1.jpg" alt="Macintosh 8500">
+                <h2>what u love</h2>
+                <p>This is the best ..........</p>
+            </div>
+            <a href="#" class="buy-button">BUY NOW</a>
+        </div>
+    </div>
+</body>
+</html>

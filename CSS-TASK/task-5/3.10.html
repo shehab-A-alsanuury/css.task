@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout Using Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .card-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+        .profile {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+        }
+        .name {
+            font-weight: bold;
+        }
+        .dropdown {
+            color: #777;
+        }
+        .text-content {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.4;
+        }
+        .image-placeholder {
+            height: 150px;
+            background-color: #e74c3c;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .action-button {
+            font-size: 14px;
+            color: #555;
+            text-decoration: none;
+        }
+        .dots {
+            display: flex;
+            gap: 5px;
+        }
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <div class="profile">
+                <div class="profile-pic"></div>
+                <div class="name">Arnold Schwarzenegger</div>
+                <div class="dropdown">▼</div>
+            </div>
+            <div class="text-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus nibh sapien, quis semper nunc mollis quis. Ut blandit, massa vel iaculis bibendum, elit tortor suscipit ante, in venenatis nisl dolor ac massa.
+            </div>
+            <div class="image-placeholder"></div>
+            <div class="actions">
+                <div class="action-buttons">
+                    <a href="#" class="action-button">Like</a>
+                    <a href="#" class="action-button">Tweet</a>
+                    <a href="#" class="action-button">Comment</a>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

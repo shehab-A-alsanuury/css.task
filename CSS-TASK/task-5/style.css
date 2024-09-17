@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 50%; 
+    margin-left: 0; 
+}
+
+.grid-item {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 50px; 
+    font-size: 1.5em;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+}
+
+.grid-item1 {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    font-size: 1em;
+}

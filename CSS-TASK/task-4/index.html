@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <hr>
+    <div class="budy">
+        <div class="bigger bigger-1">1</div>
+        <div class="bigger bigger-2">2</div>
+        <div class="bigger bigger-3">3</div>
+        <div class="bigger bigger-4">4</div>
+        <div class="bigger bigger-5">5</div>
+        <div class="bigger bigger-6">6</div>
+        <div class="bigger bigger-7">7</div>
+        <div class="bigger bigger-8">8</div>
+        <div class="bigger bigger-9">9</div>
+        <div class="bigger bigger-10">10</div>
+    </div>
+    <style>
+    .budy {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 2px solid orange;
+    }
+    .bigger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .bigger-1 { background-color: #1abc9c; }
+    .bigger-2 { background-color: #3498db; }
+    .bigger-3 { background-color: #9b59b6; }
+    .bigger-4 { background-color: #34495e; }
+    .bigger-5 { background-color: #f1c40f; }
+    .bigger-6 { background-color: #e67e22; }
+    .bigger-7 { background-color: #e74c3c; }
+    .bigger-8 { background-color: #bdc3c7; }
+    .bigger-9 { background-color: #2ecc71; }
+    .bigger-10 { background-color: #16a085; }
+</style>
+<hr>
+<div class="c">
+    <div class="item item-1">1😎</div>
+    <div class="item item-2">2🍕</div>
+    
+</div>
+<style>
+.c {
+    display: flex;
+    justify-content: space-between;
+}
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 70px;
+}
+.item-1 {
+    flex: 3;
+}
+.item-2 {
+    
+    flex: 1;
+    background-color: darkblue;
+    color: white;
+}
+
+</style>
+
+<hr>
+
+</body>
+</html>

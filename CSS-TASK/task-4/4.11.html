@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .nested-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        .sub-item {
+            background-color: #e0e0e0;
+            padding: 5px;
+        }
+
+        .item1 { grid-area: 1 / 1 / 2 / 2; }
+        .item2 { grid-area: 1 / 2 / 2 / 4; }
+        .item3 { grid-area: 1 / 4 / 2 / 6; }
+        .item4 { grid-area: 1 / 6 / 2 / 7; }
+        .item5 { grid-area: 2 / 1 / 3 / 2; }
+        .item6 { grid-area: 2 / 2 / 3 / 4; }
+        .item7 { grid-area: 2 / 4 / 3 / 6; }
+        .item8 { grid-area: 2 / 6 / 3 / 7; }
+        .item9 { grid-area: 3 / 1 / 4 / 2; }
+        .item10 { grid-area: 3 / 2 / 4 / 4; }
+        .item11 { grid-area: 3 / 4 / 4 / 6; }
+        .item12 { grid-area: 3 / 6 / 4 / 7; }
+
+        .item6 .nested-grid {
+            grid-template-rows: 2fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">Item 1</div>
+        <div class="grid-item item2 nested-grid">
+            <div class="sub-item">Sub 1</div>
+            <div class="sub-item">Sub 2</div>
+            <div class="sub-item">Sub 3</div>
+            <div class="sub-item">Sub 4</div>
+        </div>
+        <div class="grid-item item3 nested-grid">
+            <div class="sub-item">Sub 1</div>
+            <div class="sub-item">Sub 2</div>
+            <div class="sub-item">Sub 3</div>
+            <div class="sub-item">Sub 4</div>
+        </div>
+        <div class="grid-item item4">Item 4</div>
+        <div class="grid-item item5">Item 5</div>
+        <div class="grid-item item6 nested-grid">
+            <div class="sub-item">Sub 1</div>
+            <div class="sub-item">Sub 2</div>
+        </div>
+        <div class="grid-item item7 nested-grid">
+            <div class="sub-item">Sub 1</div>
+            <div class="sub-item">Sub 2</div>
+            <div class="sub-item">Sub 3</div>
+            <div class="sub-item">Sub 4</div>
+        </div>
+        <div class="grid-item item8">Item 8</div>
+        <div class="grid-item item9 nested-grid">
+            <div class="sub-item">Sub 1</div>
+            <div class="sub-item">Sub 2</div>
+            <div class="sub-item">Sub 3</div>
+            <div class="sub-item">Sub 4</div>
+        </div>
+        <div class="grid-item item10">Item 10</div>
+        <div class="grid-item item11">Item 11</div>
+        <div class="grid-item item12 nested-grid">
+            <div class="sub-item">Sub 1</div>
+            <div class="sub-item">Sub 2</div>
+            <div class="sub-item">Sub 3</div>
+            <div class="sub-item">Sub 4</div>
+        </div>
+    </div>
+</body>
+</html>

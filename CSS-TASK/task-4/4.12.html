@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Advanced Mockup</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #030303;
+        }
+        header {
+            background-color: #fff;
+            padding: 0 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 56px;
+            z-index: 100;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .hamburger-menu {
+            padding: 8px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #ff0000;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .logo i {
+            margin-right: 5px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 40px;
+            display: flex;
+            max-width: 640px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px 16px;
+            border: 1px solid #ccc;
+            border-radius: 2px 0 0 2px;
+            font-size: 16px;
+        }
+        .search-button {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-left: none;
+            padding: 0 20px;
+            border-radius: 0 2px 2px 0;
+            cursor: pointer;
+        }
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+        .user-actions a {
+            margin-left: 24px;
+            color: #606060;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-left: 24px;
+        }
+        main {
+            display: flex;
+            margin-top: 56px;
+        }
+        .sidebar {
+            width: 240px;
+            background-color: #fff;
+            height: calc(100vh - 56px);
+            position: fixed;
+            overflow-y: auto;
+            padding: 12px 0;
+        }
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            padding: 10px 24px;
+            color: #030303;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #f2f2f2;
+        }
+        .sidebar i {
+            margin-right: 24px;
+            font-size: 20px;
+        }
+        .content {
+            margin-left: 240px;
+            padding: 24px 24px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        .video-card {
+            cursor: pointer;
+        }
+        .video-thumbnail {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: #000;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-duration {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 3px 4px;
+            border-radius: 2px;
+            font-size: 12px;
+        }
+        .video-info {
+            display: flex;
+            padding-top: 12px;
+        }
+        .channel-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #000000;
+        
+            margin-right: 12px;
+        }
+        .video-details {
+            flex-grow: 1;
+        }
+        .video-title {
+            font-weight: 500;
+            margin-bottom: 4px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .video-channel, .video-stats {
+            font-size: 14px;
+            color: #606060;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="#" class="logo">
+                <i class="fab fa-youtube"></i>
+                YouTube
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="user-actions">
+            <a href="#"><i class="fas fa-video"></i></a>
+            <a href="#"><i class="fas fa-th"></i></a>
+            <a href="#"><i class="fas fa-bell"></i></a>
+            <div class="user-avatar"></div>
+        </div>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <a href="#"><i class="fas fa-home"></i>Home</a>
+            <a href="#"><i class="fas fa-fire"></i>Trending</a>
+            <a href="#"><i class="fas fa-folder"></i>Subscriptions</a>
+            <a href="#"><i class="fas fa-play-circle"></i>Library</a>
+            <a href="#"><i class="fas fa-history"></i>History</a>
+        </nav>
+        <div class="content">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="/images.png" alt="Video thumbnail">
+                    <div class="video-duration">10:23</div>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar"></div>
+                    <div class="video-details">
+                        <div class="video-title">Incredible Innovations in Technology: What's Next?</div>
+                        <div class="video-channel">TechExplorer</div>
+                        <div class="video-stats">1.2M views • 3 days ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="/images.png" alt="Video thumbnail">
+                    <div class="video-duration">15:47</div>
+                </div>
+                <div class="video-info">
+                    <div class="channel-avatar"></div>
+                    <div class="video-details">
+                        <div class="video-title">5 Easy Recipes for Busy Professionals</div>
+                        <div class="video-channel">QuickMeals</div>
+                        <div class="video-stats">500K views • 1 week ago</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

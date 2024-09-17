@@ -1,0 +1,123 @@
+p::first-letter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.blue {
+    background-color: aqua;
+}
+.pink {
+    background-color: rgb(247, 8, 247);
+}
+.red {
+    background-color: red;
+}
+li {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+.border {
+    margin-bottom: 10px;
+    width: 200px;
+}
+.border1{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(https://images.pexels.com/photos/172276/pexels-photo-172276.jpeg?cs=srgb&dl=pexels-fwstudio-33348-172276.jpg&fm=jpg) 30 round;
+    text-align: center;
+
+}
+.div1{
+    background-color: aqua;
+    height: 50px;
+}
+.div3 {
+    background-color: plum;
+    height: 50px;
+}
+.div2 {
+    text-align: center;
+    margin: 20px;
+}
+button {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    opacity: 0.5;
+}
+ 
+.smile2 {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 20px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+}
+.smile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxshadow{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: -5px;
+    background-color: white;
+}
+.re {
+    border: 1px solid red;
+}
+.or {
+    border: 1px solid orange;
+}
+.ye {
+    border: 1px solid yellow;
+}
+.gr {
+    border: 1px solid green;
+}
+.bl {
+    border: 1px solid blue;
+}
+.border0{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.border1{
+    border: 3px solid black;
+    border-top-style: dashed;
+    border-bottom-style: dotted;
+}
+.border2{
+    border: 3px solid black;
+    border-bottom-style: dashed;
+    border-left-style: dotted;
+}
+.border3{
+    border: 1px dotted black;
+    
+}
+.border4{
+    border: 3px solid black;
+    
+}
+.border5{
+    border: 3px solid blue;
+    
+}
+.border6{
+    border: 3px solid green;
+    border-right-color: blue;
+    border-bottom-style: dotted;
+}

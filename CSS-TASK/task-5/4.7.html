@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout - Task 7</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .main-content {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            height: 200px;
+        }
+        .grid-item {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div style="border: #000;">
+    <div class="main-content">
+        <div class="grid-container">
+            <div class="grid-item">Grid item 1</div>
+            <div class="grid-item">Grid item 2</div>
+            <div class="grid-item">Grid item 3</div>
+            <div class="grid-item">Grid item 4</div>
+            <div class="grid-item">Grid item 5</div>
+            <div class="grid-item">Grid item 6</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
